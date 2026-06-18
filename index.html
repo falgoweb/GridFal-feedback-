@@ -37,7 +37,25 @@
     <form id="feedbackForm">
 
   <label>1. Seberapa puas Anda dengan GridFal?</label>
-  <input id="satisfaction" type="number" min="1" max="5" required>
+
+<div class="rating-scale">
+  <span>😞</span>
+
+  <label><input type="radio" name="satisfaction" value="1" required>1</label>
+  <label><input type="radio" name="satisfaction" value="2">2</label>
+  <label><input type="radio" name="satisfaction" value="3">3</label>
+  <label><input type="radio" name="satisfaction" value="4">4</label>
+  <label><input type="radio" name="satisfaction" value="5">5</label>
+  <label><input type="radio" name="satisfaction" value="6">6</label>
+  <label><input type="radio" name="satisfaction" value="7">7</label>
+  <label><input type="radio" name="satisfaction" value="8">8</label>
+  <label><input type="radio" name="satisfaction" value="9">9</label>
+  <label><input type="radio" name="satisfaction" value="10">10</label>
+
+  <span>😍</span>
+</div>
+
+<small>1 = Sangat Buruk • 10 = Sangat Bagus</small>
 
   <label>2. Seberapa mudah GridFal digunakan?</label>
   <select id="ease">
