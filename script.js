@@ -22,7 +22,7 @@ document.getElementById("feedbackForm").addEventListener("submit", (e) => {
   e.preventDefault();
 
   const data = {
-  satisfaction: document.getElementById("satisfaction").value,
+  satisfaction: document.querySelector('input[name="satisfaction"]:checked')?.value || "",
   ease: document.getElementById("ease").value,
   favorite: document.getElementById("favorite").value,
   bugFound: document.getElementById("bugFound").value,
