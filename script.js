@@ -29,12 +29,12 @@ document.getElementById("feedbackForm").addEventListener("submit", (e) => {
   bugDetail: document.getElementById("bugDetail").value,
   speed: document.getElementById("speed").value,
   designScore: document.getElementById("designScore").value,
-  mostUsedFeature: document.getElementById("mostUsedFeature").value,
-  newFeature: document.getElementById("newFeature").value,
+  useAgain: document.getElementById("useAgain").value,
+  useCase: document.getElementById("useCase").value,
+  recommend: document.getElementById("recommend").value,
   suggestion: document.getElementById("suggestion").value,
   createdAt: new Date().toISOString()
 };
-
   push(ref(db, "feedback"), data)
     .then(() => {
       alert("Terima kasih! Feedback berhasil dikirim.");
