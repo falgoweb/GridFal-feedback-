@@ -79,3 +79,11 @@ hr {
   border: none;
   border-top: 1px solid #ddd;
 }
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  background: white;
+}
