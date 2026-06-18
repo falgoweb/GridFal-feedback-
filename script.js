@@ -22,12 +22,18 @@ document.getElementById("feedbackForm").addEventListener("submit", (e) => {
   e.preventDefault();
 
   const data = {
-    easeScore: document.getElementById("easeScore").value,
-    favoriteFeature: document.getElementById("favoriteFeature").value,
-    confusingPart: document.getElementById("confusingPart").value,
-    suggestion: document.getElementById("suggestion").value,
-    createdAt: new Date().toISOString()
-  };
+  satisfaction: document.getElementById("satisfaction").value,
+  ease: document.getElementById("ease").value,
+  favorite: document.getElementById("favorite").value,
+  bugFound: document.getElementById("bugFound").value,
+  bugDetail: document.getElementById("bugDetail").value,
+  speed: document.getElementById("speed").value,
+  designScore: document.getElementById("designScore").value,
+  mostUsedFeature: document.getElementById("mostUsedFeature").value,
+  newFeature: document.getElementById("newFeature").value,
+  suggestion: document.getElementById("suggestion").value,
+  createdAt: new Date().toISOString()
+};
 
   push(ref(db, "feedback"), data)
     .then(() => {
